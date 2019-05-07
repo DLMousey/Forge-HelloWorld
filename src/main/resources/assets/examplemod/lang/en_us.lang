@@ -3,3 +3,6 @@ item.examplemod.first_item.name=First Item
 
 # Blocks
 tile.examplemod.first_block.name=First Block
+
+# Creative Tabs
+itemGroup.examplemod=Example Mod

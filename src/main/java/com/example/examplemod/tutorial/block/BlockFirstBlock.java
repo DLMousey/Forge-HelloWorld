@@ -1,5 +1,6 @@
 package com.example.examplemod.tutorial.block;
 
+import com.example.examplemod.ExampleMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -9,7 +10,7 @@ public class BlockFirstBlock extends Block {
 
     public BlockFirstBlock() {
         super(Material.ROCK);
-        setCreativeTab(CreativeTabs.MISC);
+        setCreativeTab(ExampleMod.TUTORIAL_TAB);
         setSoundType(SoundType.STONE);
     }
 }

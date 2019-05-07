@@ -1,6 +1,8 @@
 package com.example.examplemod;
 
 import com.example.examplemod.proxy.IProxy;
+import com.example.examplemod.tutorial.tabs.TutorialTab;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -22,6 +24,8 @@ public class ExampleMod
 
     public static final String CLIENT = "com.example.examplemod.proxy.ClientProxy";
     public static final String SERVER = "com.example.examplemod.proxy.ServerProxy";
+
+    public static final CreativeTabs TUTORIAL_TAB = new TutorialTab();
 
     @SidedProxy(clientSide = ExampleMod.CLIENT, serverSide = ExampleMod.SERVER)
     public static IProxy proxy;
