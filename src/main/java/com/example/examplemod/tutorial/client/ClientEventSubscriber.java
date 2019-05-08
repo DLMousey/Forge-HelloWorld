@@ -17,6 +17,11 @@ public final class ClientEventSubscriber {
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
         registerModel(ModItems.FIRST_ITEM);
+        registerModel(ModItems.TUTORIAL_AXE);
+        registerModel(ModItems.TUTORIAL_HOE);
+        registerModel(ModItems.TUTORIAL_PICKAXE);
+        registerModel(ModItems.TUTORIAL_SHOVEL);
+        registerModel(ModItems.TUTORIAL_SWORD);
         registerModel(Item.getItemFromBlock(ModBlocks.FIRST_BLOCK));
     }
 

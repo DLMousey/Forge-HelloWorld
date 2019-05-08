@@ -1,5 +1,10 @@
 # Items
 item.examplemod.first_item.name=First Item
+item.examplemod.tutorial_axe.name=Tutorial Axe
+item.examplemod.tutorial_hoe=Tutorial Hoe
+item.examplemod.tutorial_pickaxe=Tutorial Pickaxe
+item.examplemod.tutorial_shovel=Tutorial Shovel
+item.examplemod.tutorial_sword=Tutorial Sword
 
 # Blocks
 tile.examplemod.first_block.name=First Block

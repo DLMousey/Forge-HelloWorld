@@ -3,7 +3,8 @@ package com.example.examplemod.tutorial;
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.tutorial.block.BlockFirstBlock;
 import com.example.examplemod.tutorial.init.ModBlocks;
-import com.example.examplemod.tutorial.item.ItemFirstItem;
+import com.example.examplemod.tutorial.item.*;
+import com.example.examplemod.tutorial.material.TutorialMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -27,6 +28,11 @@ public final class EventSubscriber {
     public static void registerItems(Register<Item> event) {
         final Item[] items = {
                 new ItemFirstItem().setRegistryName("first_item").setUnlocalizedName(ExampleMod.MODID + "." + "first_item"),
+                new ItemTutorialAxe(TutorialMaterials.TUTORIAL_TOOL).setRegistryName("tutorial_axe").setUnlocalizedName(ExampleMod.MODID + "." + "tutorial_axe"),
+                new ItemTutorialHoe(TutorialMaterials.TUTORIAL_TOOL).setRegistryName("tutorial_hoe").setUnlocalizedName(ExampleMod.MODID + "." + "tutorial_hoe"),
+                new ItemTutorialPickaxe(TutorialMaterials.TUTORIAL_TOOL).setRegistryName("tutorial_pickaxe").setUnlocalizedName(ExampleMod.MODID + "." + "tutorial_pickaxe"),
+                new ItemTutorialShovel(TutorialMaterials.TUTORIAL_TOOL).setRegistryName("tutorial_shovel").setUnlocalizedName(ExampleMod.MODID + "." + "tutorial_shovel"),
+                new ItemTutorialSword(TutorialMaterials.TUTORIAL_TOOL).setRegistryName("tutorial_sword").setUnlocalizedName(ExampleMod.MODID + "." + "tutorial_sword")
         };
 
         final Item[] itemBlocks = {
